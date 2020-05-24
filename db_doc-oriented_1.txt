@@ -1,0 +1,46 @@
+@startuml
+header
+<font color=red>DB types:</font>
+MongoDB, RethinkDB
+endheader
+
+object "ID: Breakfast" as breakfast {
+{
+\t "type": "toast",
+\t "bread": "whole wheat",
+\t "spread": [
+\t\t "butter",
+\t\t "jam"
+\t ] \n\
+}  
+}
+
+object "ID: Lunch" as lunch {
+{
+\t "type": "salad",
+\t "vegetarina": "false",
+\t "ingredients": [
+\t\t "tomato",
+\t\t "cucumber",
+\t\t "dressing": [
+\t\t\t "olive oil",
+\t\t\t "salt",
+\t\t ],
+\t\t "rating": "4.9"
+\t ] \n\
+}  
+}
+
+object "ID: Dinner" as dinner {
+{
+\t "type": "pizza",
+\t "size": "large",
+\t "toppings": [
+\t\t "mozarella",
+\t\t "ham"
+\t ],
+\t "price": "4.90",
+\t "presliced": "true" \n\
+}  
+}
+@enduml

@@ -1,0 +1,41 @@
+@startuml
+header
+<font color=red>DB types:</font>
+PostgreSQL, MariaDB
+endheader
+
+hide circle
+skinparam linetype ortho
+
+!unquoted procedure row($name, $type, $attr="")
+!str = $name + " : " + $type
+!if $attr != ""
+!str = str + " **<<" + $attr + ">>** "
+!endif
+str
+!endprocedure
+
+!unquoted procedure fk($name, $type)
+row($name, $type, foreign key)
+!endprocedure
+
+!unquoted procedure seq($name, $type)
+row($name, $type, seq)
+!endprocedure
+
+entity "Department" as dept {
+seq(id, int)
+--
+row(name, text)
+}
+
+entity "Course" as course {
+seq(id, int)
+--
+row(title, text)
+fk(department_id, int)
+}
+
+dept ||--o| course
+
+@enduml

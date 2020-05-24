@@ -1,0 +1,16 @@
+@startwbs
+header
+<font color=red>DB types:</font>
+DNS, LDAP, Filesystem
+endheader
+
+* /
+** /bin
+** /etc
+*** /etc/passwd
+** /...
+** /usr
+** /var
+--- /var/log
++++ /var/adm
+@endwbs

@@ -1,0 +1,18 @@
+@startuml
+header
+<font color=red>DB types:</font>
+OpenTSDB, Prometheus, InfluxDB, TimescaleDB
+endheader
+
+hide circle
+hide empty members
+
+class "**Time** \t\t\t\t   **CPU Temp** \t **System load**" as c1 {
+2020-05-18T19:00:00+00:00 \t\t 35 \t\t\t      0.45
+2020-05-18T19:01:00+00:00 \t\t 33 \t\t\t      0.42
+2020-05-18T19:02:00+00:00 \t\t 36 \t\t\t      0.47
+2020-05-18T19:03:00+00:00 \t\t 35 \t\t\t      0.43
+2020-05-18T19:04:00+00:00 \t\t 34 \t\t\t      0.44
+2020-05-18T19:05:00+00:00 \t\t 35 \t\t\t      0.44
+}
+@enduml

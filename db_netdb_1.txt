@@ -1,0 +1,21 @@
+@startuml
+header
+<font color=red>DB types:</font>
+IDMS
+endheader
+
+agent Restaurant as r
+agent Cashier as c
+agent Server as s
+agent Cook as cook
+r -- c
+r -- s
+r -- cook
+
+agent Money as m
+agent Food as f
+c --> m
+s --> m
+s --> f
+cook --> f
+@enduml

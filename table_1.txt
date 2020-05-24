@@ -1,0 +1,9 @@
+@startuml
+hide circle
+hide empty members
+
+class "**Key** \t   **Type** \t **Value**\t" as c1 {
+id \t\t int \t\t   0
+name \t text \t\t   KorG
+}
+@enduml

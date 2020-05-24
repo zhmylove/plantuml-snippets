@@ -1,0 +1,16 @@
+@startuml
+header
+<font color=red>DB types:</font>
+Redis, memcached, etcd
+endheader
+
+hide circle
+hide empty members
+
+class "**Key** \t   **Value** \t\t\t\t " as c1 {
+user_id \t 33fe5ab-482ea8c-998c020
+color \t\t red
+text \t\t "Some text here"
+data \t\t {...}
+}
+@enduml
